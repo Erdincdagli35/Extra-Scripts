@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class main{
+	/*
+	 * Aycan
+	 * ycn
+	 *
+	 * emre
+	 * emre 
+	 * mr
+	 * */
+	
+	static void getInputs(){
+		Scanner s = new Scanner(System.in);
+		System.out.print("Word : ");String word = s.nextLine();
+		doIt(word);
+
+	}
+	static void doIt(String word){
+		String[] arr=word.split("");
+		//String arrTemp[] = new  String[arr.length];
+		for(int i=0;i<arr.length;i++){
+			for(int j=0;j<arr.length;j++){
+				if(arr[i]==arr[j] && i!=j )
+					arr[i]=arr[j]="";	
+			}
+			System.out.print(arr[i]);
+		}
+		/*
+		for(int j=0;j<arr.length;j++)
+			System.out.print(arr[j]);
+		*/
+	}
+	public static void main(String args[]){
+		System.out.print("Hello\n");
+		//getInputs();
+
+		String[] arr={"e","m","i","n","e"};                                                                                                                                            String arrTemp[] = new  String[arr.length];                                                                                                                           for(int i=0;i<arr.length;i++){                                                                                                                                                  for(int j=0;j<arr.length;j++){                                                                                                                                                  if(arr[i]==arr[j] && i!=j )                                                                                                                                                     arr[i]=arr[j]="";                                                                                                                                       }                                                                                                                                                                       System.out.print(arr[i]);                                                                                                                                       }          
+	}
+}
